@@ -4,26 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52e750a5-cc0a-4b95-8c6f-3620abd935cc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-iaas/auth-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-iaas/gateway-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-iaas/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-business/cart-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-business/manager-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-business/member-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-business/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-business/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-business/product-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-business/store-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-base/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/pom.xml" afterDir="false" />
+    <list default="true" id="52e750a5-cc0a-4b95-8c6f-3620abd935cc" name="更改" comment="创建项目结构并添加依赖管理">
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/constant/AuthConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/constant/BusinessEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/constant/HttpConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/constant/ManagerConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/constant/MemberConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/constant/ProductConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/constant/QueueConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/constant/StoreConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/Area.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/Basket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/IndexImg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/MemberAddr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/MemberCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/Prod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/ProdComm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/ProdProp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/ProdPropValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/ProdTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/ProdTagReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/Sku.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/SysLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/SysRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/domain/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/model/ChangeStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/model/ProdChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/model/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-base/src/main/java/biluo/model/SkuChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/common-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +55,47 @@
       <option value="module" />
     </option>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mail@192.168.202.130" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mail@192.168.202.130" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="mail@192.168.202.130" type="feb32156:DbDataSourceImpl" />
+        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 4
 }]]></component>
   <component name="ProjectId" id="2nXezIB9cwfPZv2v7RP4lfAi7jX" />
@@ -50,21 +107,37 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/pro/power/power-common/common-base/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/pro/power/power-common/common-core/src/main/java/com/ice/Main.java",
+    "onboarding.tips.debug.path": "D:/pro/power/power-common/common-base/src/main/java/com/ice/Main.java",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pro\power\power-common\common-base\src\main\java" />
+      <recent name="D:\pro\power\power-common\common-base\src\main\java\com\ice" />
+      <recent name="D:\pro\power\power-common" />
+      <recent name="D:\pro\power\power-common\common-base" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pro\power\power-common\common-base\src\main\java" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="52e750a5-cc0a-4b95-8c6f-3620abd935cc" name="更改" comment="" />
@@ -72,12 +145,54 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729124108581</updated>
-      <workItem from="1729124109610" duration="1879000" />
+      <workItem from="1729124109610" duration="3621000" />
+      <workItem from="1729127906084" duration="475000" />
+      <workItem from="1729128393467" duration="422000" />
+      <workItem from="1729128827801" duration="65000" />
+      <workItem from="1729128902294" duration="1524000" />
+      <workItem from="1729130968513" duration="516000" />
+      <workItem from="1729131494445" duration="1258000" />
     </task>
+    <task id="LOCAL-00001" summary="创建项目结构并添加依赖管理">
+      <option name="closed" value="true" />
+      <created>1729126383950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729126383950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="创建项目结构并添加依赖管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建项目结构并添加依赖管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -143,16 +258,15 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/power-common/common-base/src/main/java/com/ice/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/power-common/common-core/src/main/java/com/ice/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
